@@ -3,18 +3,22 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
+void f(void);
+
+int i;
 int main(void) {
 	
-	int flag =1;
-	int y;
-	
-	while(flag !=0)
+	for (i=0;i<5;i++)
 	{
-		y=3;
-		flag=0;
+		f();
 	}
-	y=4;
 	
 	return 0;
 	
+}
+
+void f(void)
+{
+	for (i=0;i<10;i++)
+		printf("#");
 }
