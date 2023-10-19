@@ -6,17 +6,13 @@
 int inc(int counter);
 int main(void) {
 	
-	int i=10;
-	printf("before i=%d\n", i);
-	inc(i);
-	printf("after i=%d\n", i);
+	int i;
 	
-	return 0;
+	for (i=0;i<5;i++)
+	{
+		int temp=1;
+		printf("temp = %d\n", temp);
+		temp++;
+	}
 	
-}
-
-int inc(int counter)
-{
-	counter++;
-	return counter;
 }
