@@ -3,22 +3,15 @@
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
-void f(void);
+int all_files;
 
-int i;
+extern void sub();
+
 int main(void) {
 	
-	for (i=0;i<5;i++)
-	{
-		f();
-	}
-	
+	sub();
+	printf("%d\n", all_files);
 	return 0;
 	
 }
 
-void f(void)
-{
-	for (i=0;i<10;i++)
-		printf("#");
-}
